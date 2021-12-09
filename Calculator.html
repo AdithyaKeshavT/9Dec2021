@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input{
+            width: 40px;
+            height: 35px;
+        }
+        #main {
+            width: 120px;
+            height: 39px;
+        }
+        #clear {
+            width: 40px;
+            height: 44px;
+        }
+    </style>
+</head>
+<body>
+      <input type="text" id="main" disabled>
+      <input type="button" id = "clear" onclick='ac()' value="C">
+      <br>
+      <input type="button" onclick='pq(value)' value="9">
+      <input type="button" onclick="pq(value)" value="8">
+      <input type="button" onclick="pq(value)" value="7">
+      <input type="button" onclick="pq(value)" value="+">
+      <br>
+      <input type="button" onclick="pq(value)" value="6">
+      <input type="button" onclick="pq(value)" value="5">
+      <input type="button" onclick="pq(value)" value="4">
+      <input type="button" onclick="pq(value)" value="-">
+      <br>
+      <input type="button" onclick="pq(value)" value="3">
+      <input type="button" onclick="pq(value)" value="2">
+      <input type="button" onclick="pq(value)" value="1">
+      <input type="button" onclick="pq(value)" value="/">
+      <br>
+      <input type="button" onclick="pq(value)" value="%">
+      <input type="button" onclick="pq(value)" value="0">
+      <input type="button" onclick="ab()" value="=">
+      <input type="button" onclick="pq(value)" value="*">
+    </div>
+    <script>
+        function pq(p) {
+            document.getElementById("main").value+=p;
+        }
+        function ab() {
+            document.getElementById("main").value = eval(document.getElementById("main").value);
+        }
+        function ac() {
+            document.getElementById("main").value = "";
+        }
+    </script>
+</body>
+</html>
