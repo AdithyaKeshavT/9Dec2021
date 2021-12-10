@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         input{
             width: 40px;
             height: 35px;
         }
         #main {
-            width: 120px;
-            height: 39px;
+            width: 128px;
+            height: 40px;
+            
         }
         #clear {
             width: 40px;
-            height: 44px;
+            height: 40px;
         }
     </style>
 </head>
-<body>
+<body style="margin-top: 50px;">
+    <div class="text-center">
       <input type="text" id="main" disabled>
       <input type="button" id = "clear" onclick='ac()' value="C">
       <br>
